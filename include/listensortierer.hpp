@@ -19,6 +19,7 @@ class Listensortierer
 
         // Funktionen
         void ListeSortieren();
+        void InDateiAuslagern(string const &neueDatei);
 
         ~Listensortierer();
     protected:

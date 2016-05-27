@@ -35,10 +35,24 @@ void Listensortierer::InListeSchreiben(string const &wort)
     Listensortierer::liste.push_back(wort);
 }
 
-// sortiert den Vektor alphanomerisch
+// sortiert den Vektor alphanumerisch
 void Listensortierer::ListeSortieren()
 {
-    sort(Listensortierer::GetListe().begin(), Listensortierer::GetListe().end());
+    sort(Listensortierer::liste.begin(), Listensortierer::liste.end());
+}
+
+// Lagert die Listen in eine Datei um
+void Listensortierer::InDateiAuslagern(string const &neueDatei)
+{
+    ofstream fileout;
+    fileout.open(neueDatei);
+
+    for(string si : Listensortierer::GetListe())
+    {
+        fileout << si << endl;
+    }
+
+    fileout.close();
 }
 
 Listensortierer::~Listensortierer(){};
