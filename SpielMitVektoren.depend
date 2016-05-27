@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1464359111 source:/home/niclas/Dokumente/Development/vektoren/SpielMitVektoren/src/listensortierer.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<algorithm>
+	"listensortierer.hpp"
+
+1464359125 /home/niclas/Dokumente/Development/vektoren/SpielMitVektoren/include/listensortierer.hpp
+	<iostream>
+	<string>
+	<vector>
+
+1464359067 source:/home/niclas/Dokumente/Development/vektoren/SpielMitVektoren/main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<string>
+	<algorithm>
+	"listensortierer.hpp"
+
